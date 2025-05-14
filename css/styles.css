@@ -81,7 +81,7 @@ nav {
     height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('/miaeyebrows/images/carrossel-04.png') center/cover;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/CARROSSEL-04.png') center/cover;
     color: white;
     text-align: center;
     padding: 0 1rem;
