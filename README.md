@@ -1,15 +1,22 @@
-# My Website
+# MIA Eyebrows Website
 
-A modern, responsive website built with HTML, CSS, and JavaScript.
+A modern, responsive bilingual (English/Portuguese) website for MIA Eyebrows, showcasing professional eyebrow services and products.
+
+## Live Demo
+
+You can view the live demo of this website at: [https://jjfcode.github.io/miaeyebrows/](https://jjfcode.github.io/miaeyebrows/)
 
 ## Features
 
+- Bilingual support (English/Portuguese) with language switcher
 - Responsive design that works on all devices
 - Modern and clean user interface
 - Smooth scrolling navigation
-- Animated service cards
+- Product showcase with image gallery
 - Contact form with validation
 - Mobile-friendly layout
+- Flag-based language selector
+- Social media integration
 
 ## Getting Started
 
