@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.7.0/css/flag-icons.min.css">
 </head>
 <body>
     <header>
@@ -21,15 +22,36 @@
                 <img src="images/LOGOTIPO_Prancheta 1-E.png" alt="MIA Eyebrows Logo">
             </div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="#home" class="en">Home</a>
+                    <a href="#home" class="pt">Início</a>
+                </li>
+                <li>
+                    <a href="#products" class="en">Products</a>
+                    <a href="#products" class="pt">Produtos</a>
+                </li>
+                <li>
+                    <a href="#about" class="en">About</a>
+                    <a href="#about" class="pt">Sobre</a>
+                </li>
+                <li>
+                    <a href="#contact" class="en">Contact</a>
+                    <a href="#contact" class="pt">Contato</a>
+                </li>
             </ul>
             <div class="nav-icons">
                 <a href="#" class="icon"><i class="fas fa-search"></i></a>
                 <a href="#" class="icon"><i class="fas fa-shopping-cart"></i></a>
                 <a href="#" class="icon"><i class="fas fa-user"></i></a>
+                <div class="lang-switch">
+                    <span class="flag-icon en" onclick="setLanguage('en')">
+                        <span class="fi fi-us"></span>
+                    </span>
+                    <span class="separator">|</span>
+                    <span class="flag-icon pt" onclick="setLanguage('pt')">
+                        <span class="fi fi-br"></span>
+                    </span>
+                </div>
             </div>
         </nav>
     </header>
@@ -37,21 +59,27 @@
     <main>
         <section id="home" class="hero">
             <div class="hero-content">
-                <h1>Perfect Eyebrows, Perfect You</h1>
-                <p>Professional eyebrow services and products for your natural beauty</p>
+                <h1 class="en">Perfect Eyebrows, Perfect You</h1>
+                <h1 class="pt">Sobrancelhas Perfeitas, Você Perfeita</h1>
+                <p class="en">Professional eyebrow services and products for your natural beauty</p>
+                <p class="pt">Serviços e produtos profissionais para sobrancelhas para sua beleza natural</p>
             </div>
         </section>
 
 
         <section id="products" class="products">
-            <h2>Featured Products</h2>
+            <h2 class="en">Featured Products</h2>
+            <h2 class="pt">Produtos em Destaque</h2>
             <div class="products-grid">
                 <div class="product-card">
                     <img src="https://via.placeholder.com/300x300" alt="Eyebrow Pencil">
-                    <h3>Precision Eyebrow Pencil</h3>
-                    <p>Long-lasting, natural-looking color</p>
+                    <h3 class="en">Precision Eyebrow Pencil</h3>
+                    <h3 class="pt">Lápis de Sobrancelha de Precisão</h3>
+                    <p class="en">Long-lasting, natural-looking color</p>
+                    <p class="pt">Cor duradoura e natural</p>
                     <span class="price">$24.99</span>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="add-to-cart en">Add to Cart</button>
+                    <button class="add-to-cart pt">Adicionar ao Carrinho</button>
                 </div>
                 <div class="product-card">
                     <img src="https://via.placeholder.com/300x300" alt="Eyebrow Gel">
@@ -71,11 +99,18 @@
         </section>
 
         <section id="about" class="about">
-            <h2>About Us</h2>
+            <h2 class="en">About Us</h2>
+            <h2 class="pt">Sobre Nós</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>At MIA Eyebrows, we believe that perfect eyebrows can transform your entire look. Our team of certified professionals is dedicated to helping you achieve your dream brows through our expert services and premium products.</p>
-                    <p>With years of experience and a passion for beauty, we provide personalized solutions that enhance your natural features while maintaining the highest standards of safety and quality.</p>
+                    <div class="en">
+                        <p>At MIA Eyebrows, we believe that perfect eyebrows can transform your entire look. Our team of certified professionals is dedicated to helping you achieve your dream brows through our expert services and premium products.</p>
+                        <p>With years of experience and a passion for beauty, we provide personalized solutions that enhance your natural features while maintaining the highest standards of safety and quality.</p>
+                    </div>
+                    <div class="pt">
+                        <p>Na MIA Eyebrows, acreditamos que sobrancelhas perfeitas podem transformar todo o seu visual. Nossa equipe de profissionais certificados está dedicada a ajudá-la a alcançar as sobrancelhas dos seus sonhos através de nossos serviços especializados e produtos premium.</p>
+                        <p>Com anos de experiência e paixão pela beleza, fornecemos soluções personalizadas que realçam seus traços naturais, mantendo os mais altos padrões de segurança e qualidade.</p>
+                    </div>
                 </div>
                 <div class="about-image">
                     <img src="https://via.placeholder.com/500x300" alt="Our Studio">
@@ -84,19 +119,24 @@
         </section>
 
         <section id="contact" class="contact">
-            <h2>Contact Us</h2>
+            <h2 class="en">Contact Us</h2>
+            <h2 class="pt">Fale Conosco</h2>
             <div class="contact-container">
                 <div class="contact-info">
-                    <h3>Get in Touch</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> 123 Beauty Street, City, Country</p>
+                    <h3 class="en">Get in Touch</h3>
+                    <h3 class="pt">Entre em Contato</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> <span class="en">123 Beauty Street, City, Country</span><span class="pt">Rua da Beleza, 123, Cidade, País</span></p>
                     <p><i class="fas fa-phone"></i> (555) 123-4567</p>
                     <p><i class="fas fa-envelope"></i> info@miaeyebrows.com</p>
                 </div>
                 <form id="contact-form">
-                    <input type="text" placeholder="Name" required>
+                    <input type="text" class="en" placeholder="Name" required>
+                    <input type="text" class="pt" placeholder="Nome" required>
                     <input type="email" placeholder="Email" required>
-                    <textarea placeholder="Message" required></textarea>
-                    <button type="submit">Send Message</button>
+                    <textarea class="en" placeholder="Message" required></textarea>
+                    <textarea class="pt" placeholder="Mensagem" required></textarea>
+                    <button type="submit" class="en">Send Message</button>
+                    <button type="submit" class="pt">Enviar Mensagem</button>
                 </form>
             </div>
         </section>
@@ -106,19 +146,34 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h3>MIA Eyebrows</h3>
-                <p>Your destination for perfect eyebrows</p>
+                <p class="en">Your destination for perfect eyebrows</p>
+                <p class="pt">Seu destino para sobrancelhas perfeitas</p>
             </div>
             <div class="footer-section">
-                <h3>Quick Links</h3>
+                <h3 class="en">Quick Links</h3>
+                <h3 class="pt">Links Rápidos</h3>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <a href="#home" class="en">Home</a>
+                        <a href="#home" class="pt">Início</a>
+                    </li>
+                    <li>
+                        <a href="#products" class="en">Products</a>
+                        <a href="#products" class="pt">Produtos</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="en">About</a>
+                        <a href="#about" class="pt">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="en">Contact</a>
+                        <a href="#contact" class="pt">Contato</a>
+                    </li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h3>Connect With Us</h3>
+                <h3 class="en">Connect With Us</h3>
+                <h3 class="pt">Conecte-se Conosco</h3>
                 <div class="social-links">
                     <a href="#"><i class="fab fa-facebook"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
@@ -127,10 +182,11 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 MIA Eyebrows. All rights reserved.</p>
+            <p class="en">&copy; 2025 MIA Eyebrows. All rights reserved.</p>
+            <p class="pt">&copy; 2025 MIA Eyebrows. Todos os direitos reservados.</p>
         </div>
     </footer>
 
     <script src="js/script.js"></script>
 </body>
-</html> 
+</html>

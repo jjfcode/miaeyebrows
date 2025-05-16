@@ -110,4 +110,42 @@ style.textContent = `
         }
     }
 `;
-document.head.appendChild(style); 
+document.head.appendChild(style);
+
+// Language switching functionality
+function setLanguage(lang) {
+    const html = document.documentElement;
+    
+    // Update the HTML lang attribute
+    html.setAttribute('lang', lang);
+    html.className = lang;
+    
+    // Update visibility of elements (except flags)
+    document.querySelectorAll('.en:not(.flag-icon), .pt:not(.flag-icon)').forEach(el => {
+        if (el.classList.contains(lang)) {
+            el.style.display = 'block';
+        } else {
+            el.style.display = 'none';
+        }
+    });
+
+    // Update opacity of flags
+    document.querySelectorAll('.flag-icon').forEach(flag => {
+        if (flag.classList.contains(lang)) {
+            flag.style.opacity = '1';
+        } else {
+            flag.style.opacity = '0.5';
+        }
+    });
+}
+
+// Initialize language display on page load
+document.addEventListener('DOMContentLoaded', () => {
+    const currentLang = document.documentElement.getAttribute('lang') || 'en';
+    document.querySelectorAll('.en, .pt').forEach(el => {
+        el.style.display = el.classList.contains(currentLang) ? '' : 'none';
+    });
+});
+
+// Initialize language
+document.documentElement.setAttribute('lang', 'en');
