@@ -2,6 +2,10 @@
 
 A modern, responsive bilingual (English/Portuguese) website for MIA Eyebrows, showcasing professional eyebrow services and products.
 
+## Repository
+
+GitHub Repository: [https://github.com/jjfcode/miaeyebrows](https://github.com/jjfcode/miaeyebrows)
+
 ## Live Demo
 
 You can view the live demo of this website at: [https://jjfcode.github.io/miaeyebrows/](https://jjfcode.github.io/miaeyebrows/)
